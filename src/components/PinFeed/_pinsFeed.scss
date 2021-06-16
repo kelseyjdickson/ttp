@@ -8,9 +8,34 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-right: 10px;
+   justify-content: space-evenly;
 &__pin-image{
     border-radius: 20px;
+}
+&__title{
+text-align: left;
+word-wrap: break-word;
+font-size: 14px;
+font-weight: 700;
+}
+&__name{
+text-align: left;
+line-break: strict;
+font-size: 14px;
+font-weight: 400;
+
+}
+&__heart{
+    width:10px;
+    height:10px;
+    margin-right:5px;
+}
+&__likes{
+    display:flex;
+    align-content:stretch;
+    align-items:baseline;
+    justify-content: flex-start;
+
 }
     
 }
