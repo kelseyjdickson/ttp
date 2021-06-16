@@ -1,0 +1,16 @@
+// .pin-image:hover{
+// background-color: gray;
+// width: 700px;
+// border-radius: 20px;
+// }
+.feed{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-right: 10px;
+&__pin-image{
+    border-radius: 20px;
+}
+    
+}

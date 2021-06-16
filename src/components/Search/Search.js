@@ -9,11 +9,12 @@ const Search = () => {
     return(
     <>
         <form className="search">
-           <SearchIcon className="search__icon"/>
+           {/* <SearchIcon className="search__icon"/> */}
             <input 
             type="text"
             className="search__input"
             placeholder={"Search"}
+            img src={SearchIcon}
             />
      </form>
     </>

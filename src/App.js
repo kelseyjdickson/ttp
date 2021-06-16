@@ -1,18 +1,25 @@
-import React from 'react'
-import {Home, Navbar} from '../src/components'
- 
+import React,{useState, useEffect} from 'react'
+import {Home,} from '../src/components'
+import  Navbar from './components/Navbar/Navbar'
 
+const App =()=> {
 
+  const [pins, setPins] = useState(null);
 
-function App() {
-
-
+  useEffect(() => {
+      fetch("http://localhost:8000/pins")
+      .then(res => {
+          return res.json();
+      })
+      .then(data => {
+          setPins(data)
+      })
+  }, []);
   
   return (
     <div className="App">
-      <h1>Hello</h1>
-      <Navbar />
-      <Home/>
+      <Navbar pins={pins}/>
+      <Home pins={pins}/>
     </div>
   );
 }

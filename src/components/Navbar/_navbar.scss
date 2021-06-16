@@ -1,0 +1,28 @@
+.nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    &__home{
+        background-color: black;
+        color:white;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    &__home:hover{
+        color: black;
+        background-color: white;
+        cursor: pointer;
+    }
+    &__bell, &__chat{
+        width: 48px;
+        height: 48px;
+    }
+    &__bell:hover{
+        cursor: pointer;
+    }
+}
+
+.logo{
+    width: 48px;
+    height: 48px;
+}

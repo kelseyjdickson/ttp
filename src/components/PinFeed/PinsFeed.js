@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+//assets
+import './_pinsFeed.scss'
 const PinsFeed = ({ pins }) => {
   console.log(pins);
   return (
-    <div>
-      <h1>PinsFeed</h1>
+    <div className="feed">
+      
       {pins.map(pin => (
         <div key={pin.id}>
-            <img src={pin.images['236x'].url}/>
+            <img className="feed__pin-image"src={pin.images['236x'].url}/>
             <p>{pin.title}</p>
             <p>{pin.pinner.full_name}| {pin.pinner.username}</p>
             
