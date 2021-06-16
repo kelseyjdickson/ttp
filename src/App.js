@@ -1,5 +1,6 @@
 import React from 'react'
-import Home from './components/Home'
+import {Home, Navbar} from '../src/components'
+ 
 
 
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <h1>Hello</h1>
+      <Navbar />
       <Home/>
     </div>
   );
