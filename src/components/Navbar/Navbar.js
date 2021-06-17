@@ -5,6 +5,7 @@ import  Search  from '../Search/Search'
 import pinterestLogo from '../../assets/p.png';
 import bell from '../../assets/bell.png'
 import chat from '../../assets/chat.png'
+import profilePic from '../../assets/kel.png'
 import './_navbar.scss'
 
 
@@ -18,6 +19,7 @@ const Navbar = ({ pins }) => {
         <Search />
         <img className="nav__bell"src={bell} alt="notifications bell"/>
         <img className="nav__chat" src={chat} alt="messages"/>
+        <img className="nav__profile"src={profilePic}/>
         </div>
         </>
     )

@@ -13,12 +13,24 @@
         background-color: white;
         cursor: pointer;
     }
-    &__bell, &__chat{
-        width: 48px;
-        height: 48px;
+    &__bell, &__chat, &__profile{
+        width: 24px;
+        height: 24px;
     }
     &__bell:hover{
         cursor: pointer;
+    }
+    &__chat:hover{
+        cursor: pointer;
+    }
+    &__profile:hover{
+        cursor: pointer;
+        background-color: lightgray;
+        border-radius: 30px
+
+    }
+    &__profile{
+        border-radius: 20px;
     }
 }
 
