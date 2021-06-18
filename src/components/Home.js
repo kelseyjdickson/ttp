@@ -19,6 +19,7 @@ const Home = ({ pins }) => {
         <>
             <h1>Home</h1>
             { pins && <PinsFeed pins={pins}/>}
+            
         </>
         
     )

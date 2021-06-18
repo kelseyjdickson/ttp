@@ -1,20 +1,26 @@
-import React from 'react'
+import React,{ useState } from 'react'
 
 //assets
 import './_search.scss'
 import SearchIcon from '../../assets/Search'
 
 
-const Search = () => {
+const Search = ( { pins, changeSearchTerm, searchQuery} ) => {
+   
+    const onChange = e =>{
+        changeSearchTerm(e.target.value)
+    }
+    
     return(
     <>
         <form className="search">
-           {/* <SearchIcon className="search__icon"/> */}
+           
             <input 
             type="text"
             className="search__input"
             placeholder={"Search"}
-            img src={SearchIcon}
+             value={searchQuery}
+           onChange={onChange}
             />
      </form>
     </>
