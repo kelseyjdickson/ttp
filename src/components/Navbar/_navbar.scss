@@ -19,14 +19,22 @@
     }
     &__bell:hover{
         cursor: pointer;
+        background-color: lightgray;
+        padding: 10px;
+        border-radius: 50px;
     }
     &__chat:hover{
         cursor: pointer;
+        background-color: lightgray; 
+        padding: 10px;
+        border-radius: 50px;
     }
     &__profile:hover{
         cursor: pointer;
-        background-color: lightgray;
-        border-radius: 30px
+        background-color: lightgray;   
+        padding: 10px;
+        border-radius: 50px;
+        
 
     }
     &__profile{
