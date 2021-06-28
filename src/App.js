@@ -17,16 +17,16 @@ const App =()=> {
 
 
 
-  useEffect(() => {
-      fetch("http://localhost:8000/pins")
-      .then(res => {
-          return res.json();
-      })
-      .then(data => {
-          setPins(data)
+  // useEffect(() => {
+  //     fetch("http://localhost:8000/pins")
+  //     .then(res => {
+  //         return res.json();
+  //     })
+  //     .then(data => {
+  //         setPins(data)
           
-      })
-  }, []);
+  //     })
+  // }, []);
 
   return (
     <div className="App">
